@@ -13,6 +13,7 @@ Variables accessed by the module:
 */
 
 package testClasses;
+
 import java.io.File;
 import java.io.IOException;
 import org.testng.Assert;
@@ -26,10 +27,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import objectClasses.Team;
 import objectClasses.Player;
 
-
 public class TestScenarioValidations {
 
-	// Deserializes team object and stores the object in a suite level variable so that other test method can access
+	// Deserializes team object and stores the object in a suite level variable so
+	// that other test method can access
 	@BeforeClass
 	@Parameters({ "input-json-path" })
 	public void getDataObject(String data_path, ITestContext context) {
